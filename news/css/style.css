@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* line 5, style.scss */
+.top_catch {
+  padding: 400px 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+@media (max-width: 760px) {
+  /* line 5, style.scss */
+  .top_catch {
+    padding: 300px 0;
+  }
+}
+
+/* line 15, style.scss */
+#main_contents {
+  margin-top: 90px;
+}
+/* line 17, style.scss */
+#main_contents section {
+  margin-bottom: 120px;
+}
+/* line 19, style.scss */
+#main_contents section .section_title {
+  font-family: 'Courier Prime', Helvetica, "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  position: relative;
+  text-align: center;
+  color: #240402;
+  letter-spacing: 4px;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+@media (max-width: 575px) {
+  /* line 19, style.scss */
+  #main_contents section .section_title {
+    font-size: 2rem;
+  }
+}
+/* line 30, style.scss */
+#main_contents section .section_title span {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  font-size: 1.4rem;
+}
+@media (max-width: 575px) {
+  /* line 30, style.scss */
+  #main_contents section .section_title span {
+    font-size: 1.2rem;
+  }
+}
+/* line 39, style.scss */
+#main_contents section .section_title span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -22px;
+  right: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #000;
+}
+/* line 53, style.scss */
+#main_contents section .description {
+  max-width: 760px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 760px) {
+  /* line 53, style.scss */
+  #main_contents section .description {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+/* line 62, style.scss */
+#main_contents section .description p {
+  line-height: 2;
+  font-size: 1.5rem;
+  text-align: justify;
+  text-indent: 1em;
+}
+@media (max-width: 760px) {
+  /* line 62, style.scss */
+  #main_contents section .description p {
+    font-size: 1.5rem;
+  }
+}
+/* line 72, style.scss */
+#main_contents section .news_list {
+  max-width: 575px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+/* line 81, style.scss */
+#main_contents section .news_list .column {
+  padding-bottom: 20px;
+  border-bottom: solid 1px #ddd;
+  margin-bottom: 15px;
+}
+/* line 85, style.scss */
+#main_contents section .news_list .column .day {
+  display: inline-block;
+  width: 140px;
+  float: left;
+  letter-spacing: 0.1rem;
+}
+@media (max-width: 575px) {
+  /* line 85, style.scss */
+  #main_contents section .news_list .column .day {
+    display: block;
+    width: auto;
+    float: none;
+  }
+}
+/* line 96, style.scss */
+#main_contents section .news_list .column .title {
+  display: inline-block;
+  width: 405px;
+  text-align: justify;
+}
+@media (max-width: 575px) {
+  /* line 96, style.scss */
+  #main_contents section .news_list .column .title {
+    display: block;
+    width: auto;
+  }
+}
+/* line 107, style.scss */
+#main_contents section .button {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 60px;
+}
+/* line 111, style.scss */
+#main_contents section .button a {
+  display: block;
+  max-width: 400px;
+  line-height: 60px;
+  border: 2px solid #444;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Open Sans', Helvetica, "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 2.5rem;
+  color: #444;
+  text-align: center;
+}
+@media (max-width: 760px) {
+  /* line 111, style.scss */
+  #main_contents section .button a {
+    max-width: 300px;
+    line-height: 40px;
+    font-size: 2rem;
+  }
+}
+/* line 128, style.scss */
+#main_contents section .button a:hover {
+  background-color: #444;
+  color: #fff;
+}
