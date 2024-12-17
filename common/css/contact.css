@@ -1,0 +1,1041 @@
+@charset "UTF-8";
+/* line 6, contact.scss */
+.contact_contents {
+  max-width: 1024px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-bottom: 90px;
+  margin-left: auto;
+}
+@media (max-width: 575px) {
+  /* line 6, contact.scss */
+  .contact_contents {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 18, contact.scss */
+#form {
+  text-align: left;
+}
+/* line 20, contact.scss */
+#form .explain_wrapper {
+  max-width: 1024px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #444;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  color: #444;
+}
+/* line 28, contact.scss */
+#form .explain_wrapper h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  /* line 28, contact.scss */
+  #form .explain_wrapper h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+}
+/* line 37, contact.scss */
+#form .explain_wrapper p {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+@media (max-width: 575px) {
+  /* line 37, contact.scss */
+  #form .explain_wrapper p {
+    font-size: 1.2rem;
+  }
+}
+/* line 45, contact.scss */
+#form form {
+  max-width: 800px;
+  margin-top: 0;
+  margin-bottom: 90px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 52, contact.scss */
+#form .form_item {
+  font-size: 1.5rem;
+}
+@media (max-width: 575px) {
+  /* line 52, contact.scss */
+  #form .form_item {
+    margin: 0 0 20px;
+    font-size: 1.3rem;
+  }
+}
+/* line 58, contact.scss */
+#form .form_item h4,
+#form .form_item h5 {
+  font-weight: 200;
+}
+/* line 62, contact.scss */
+#form .form_item h4 {
+  margin-top: 60px;
+  font-size: 2rem;
+}
+@media (max-width: 575px) {
+  /* line 62, contact.scss */
+  #form .form_item h4 {
+    font-size: 1.8rem;
+  }
+}
+/* line 68, contact.scss */
+#form .form_item h4 span {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+@media (max-width: 575px) {
+  /* line 68, contact.scss */
+  #form .form_item h4 span {
+    font-size: 1.2rem;
+  }
+}
+/* line 76, contact.scss */
+#form .form_item h4 span.at_will {
+  color: #aaa;
+}
+/* line 80, contact.scss */
+#form .form_item h5 {
+  margin-top: 15px;
+  color: #333;
+  font-size: 1.3rem;
+}
+/* line 85, contact.scss */
+#form .form_item .caution {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+/* line 90, contact.scss */
+#form .item_input input {
+  width: calc(100% - 40px);
+  border-radius: 2px;
+  border: 2px solid #ddd;
+  padding: 16px 20px;
+  margin: 11px 0 11px 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 575px) {
+  /* line 90, contact.scss */
+  #form .item_input input {
+    padding: 13px 16px;
+    margin: 5px 0;
+  }
+}
+/* line 103, contact.scss */
+#form .item_input_mini input {
+  border-radius: 2px;
+  border: none;
+  padding: 8px 10px;
+  border: 2px solid #ddd;
+  margin: 11px 0 11px 0;
+  font-size: 14px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.23);
+}
+/* line 112, contact.scss */
+#form select {
+  outline: none;
+  text-overflow: '';
+  background: none transparent;
+  vertical-align: middle;
+  font-size: inherit;
+  color: inherit;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+/* line 123, contact.scss */
+#form .item_select {
+  position: relative;
+}
+/* line 125, contact.scss */
+#form .item_select i {
+  z-index: 1;
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  line-height: 52px;
+  color: #777;
+  font-size: 30px;
+  pointer-events: none;
+}
+@media (max-width: 575px) {
+  /* line 125, contact.scss */
+  #form .item_select i {
+    top: 12px;
+    line-height: 40px;
+    font-size: 26px;
+  }
+}
+/* line 140, contact.scss */
+#form .item_select select {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 15px 0;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  color: #777;
+  border-radius: 2px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 575px) {
+  /* line 140, contact.scss */
+  #form .item_select select {
+    padding: 13px 16px;
+    margin: 10px 0;
+  }
+}
+/* line 153, contact.scss */
+#form .item_select select option {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+}
+/* line 161, contact.scss */
+#form .item_select_mini {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+@media (max-width: 575px) {
+  /* line 161, contact.scss */
+  #form .item_select_mini {
+    margin-top: 10px;
+  }
+}
+/* line 171, contact.scss */
+#form .item_select_mini i {
+  z-index: 1;
+  position: absolute;
+  right: 15px;
+  top: 2px;
+  line-height: 50px;
+  color: #777;
+  font-size: 30px;
+  pointer-events: none;
+}
+@media (max-width: 575px) {
+  /* line 171, contact.scss */
+  #form .item_select_mini i {
+    right: 7px;
+    line-height: 33px;
+    font-size: 16px;
+  }
+}
+/* line 186, contact.scss */
+#form .item_select_mini select {
+  padding-top: 16px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  color: #777;
+  border-radius: 2px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 575px) {
+  /* line 186, contact.scss */
+  #form .item_select_mini select {
+    padding: 8px 20px 8px 5px;
+  }
+}
+/* line 199, contact.scss */
+#form .item_select_mini select option {
+  display: block;
+  background-color: #fff;
+  color: #333;
+}
+/* line 206, contact.scss */
+#form .item_select_mini:first-of-type {
+  margin-left: 0;
+}
+/* line 209, contact.scss */
+#form .item_checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 5px 0;
+}
+/* line 213, contact.scss */
+#form .item_checkbox label {
+  display: inline-block;
+  width: 33.33%;
+  padding-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  /* line 213, contact.scss */
+  #form .item_checkbox label {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  /* line 213, contact.scss */
+  #form .item_checkbox label {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 575px) {
+  /* line 226, contact.scss */
+  #form .item_checkbox label:last-child {
+    padding-bottom: 0;
+  }
+}
+/* line 232, contact.scss */
+#form .checkbox_input {
+  display: none;
+}
+/* line 235, contact.scss */
+#form .checkbox_input_text {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  position: relative;
+  margin-right: 20px;
+  color: #777;
+  font-weight: 700;
+  -ms-user-select: none;
+  /* IE 10+ */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@media (max-width: 575px) {
+  /* line 235, contact.scss */
+  #form .checkbox_input_text {
+    padding-left: 20px;
+  }
+}
+/* line 251, contact.scss */
+#form .checkbox_input_text .unavailable {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 100px;
+  line-height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(234, 85, 73, 0.8);
+  transform: translateY(-50%) translateX(-5%) rotate(-15deg);
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  /* line 251, contact.scss */
+  #form .checkbox_input_text .unavailable {
+    right: auto;
+    left: 25px;
+  }
+}
+@media (max-width: 575px) {
+  /* line 251, contact.scss */
+  #form .checkbox_input_text .unavailable {
+    transform: translateY(-50%) translateX(-5%) rotate(-15deg);
+  }
+}
+/* line 275, contact.scss */
+#form .checkbox_input_text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+@media (max-width: 575px) {
+  /* line 275, contact.scss */
+  #form .checkbox_input_text::before {
+    width: 12px;
+    height: 12px;
+  }
+}
+/* line 290, contact.scss */
+#form .checkbox_input:checked + .checkbox_input_text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #333;
+  border-right: 3px solid #333;
+}
+@media (max-width: 575px) {
+  /* line 290, contact.scss */
+  #form .checkbox_input:checked + .checkbox_input_text::after {
+    top: -2px;
+    left: 4px;
+    width: 5px;
+    height: 12px;
+  }
+}
+/* line 308, contact.scss */
+#form .item_circle_checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 5px 0;
+}
+/* line 312, contact.scss */
+#form .item_circle_checkbox label {
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 30px;
+}
+@media (max-width: 575px) {
+  /* line 312, contact.scss */
+  #form .item_circle_checkbox label {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 575px) {
+  /* line 322, contact.scss */
+  #form .item_circle_checkbox label:last-child {
+    padding-bottom: 0;
+  }
+}
+/* line 328, contact.scss */
+#form .circle_check {
+  display: none;
+}
+/* line 331, contact.scss */
+#form .circle_check_text {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  position: relative;
+  margin-right: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  -ms-user-select: none;
+  /* IE 10+ */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@media (max-width: 575px) {
+  /* line 331, contact.scss */
+  #form .circle_check_text {
+    font-size: 1.8rem;
+    padding-left: 30px;
+  }
+}
+/* line 348, contact.scss */
+#form .circle_check_text .unavailable {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 100px;
+  line-height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(234, 85, 73, 0.8);
+  transform: translateY(-50%) translateX(-5%) rotate(-15deg);
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  /* line 348, contact.scss */
+  #form .circle_check_text .unavailable {
+    right: auto;
+    left: 25px;
+  }
+}
+@media (max-width: 575px) {
+  /* line 348, contact.scss */
+  #form .circle_check_text .unavailable {
+    transform: translateY(-50%) translateX(-5%) rotate(-15deg);
+  }
+}
+/* line 371, contact.scss */
+#form .circle_check_text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  border-radius: 16px;
+}
+@media (max-width: 575px) {
+  /* line 371, contact.scss */
+  #form .circle_check_text::before {
+    top: 1px;
+    width: 24px;
+    height: 24px;
+  }
+}
+/* line 387, contact.scss */
+#form .circle_check:checked + .circle_check_text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 6px;
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+@media (max-width: 575px) {
+  /* line 387, contact.scss */
+  #form .circle_check:checked + .circle_check_text::after {
+    top: 5.3px;
+    left: 4px;
+    width: 17px;
+    height: 17px;
+  }
+}
+/* line 404, contact.scss */
+#form .item_input textarea {
+  width: calc(100% - 40px);
+  border-radius: 2px;
+  border: 2px solid #ddd;
+  padding: 16px 20px;
+  margin: 11px 0 11px 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.23);
+}
+/* line 413, contact.scss */
+#form .item_input_post {
+  font-size: 1.5rem;
+}
+/* line 416, contact.scss */
+#form .item_input_post input {
+  border-radius: 2px;
+  border: 2px solid #ddd;
+  padding: 8px 10px;
+  margin: 11px 0 11px 0;
+  font-size: 1.4rem;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.23);
+}
+/* line 424, contact.scss */
+#form .privacy_item {
+  display: block;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border: solid 1px #888;
+}
+/* line 431, contact.scss */
+#form .privacy_item h4 {
+  line-height: 2;
+  font-size: 1.8rem;
+}
+/* line 435, contact.scss */
+#form .privacy_item p {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+/* line 438, contact.scss */
+#form .privacy_item p a {
+  color: #fe8c34;
+}
+/* line 442, contact.scss */
+#form .privacy_item div {
+  padding-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  /* line 442, contact.scss */
+  #form .privacy_item div {
+    padding-top: 10px;
+  }
+}
+/* line 448, contact.scss */
+#form .privacy_item div label {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 135px;
+  right: 0;
+  left: 0;
+}
+/* line 455, contact.scss */
+#form .privacy_item div label .checkbox_input_text {
+  font-size: 1.5rem;
+}
+@media (max-width: 575px) {
+  /* line 455, contact.scss */
+  #form .privacy_item div label .checkbox_input_text {
+    font-size: 1.3rem;
+  }
+}
+/* line 461, contact.scss */
+#form .privacy_item div label span:before {
+  top: 0;
+}
+/* line 464, contact.scss */
+#form .privacy_item div label span:after {
+  top: -3px;
+}
+/* line 470, contact.scss */
+#form .submit_button {
+  display: block;
+  min-width: 200px;
+  width: 40%;
+  height: 50px;
+  padding: 0;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  background: #333;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans JP", 游ゴシック, YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+  transition: filter 0.2s linear;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  /* line 470, contact.scss */
+  #form .submit_button {
+    width: 200px;
+    height: 42px;
+    font-size: 1.5rem;
+  }
+}
+
+/* line 498, contact.scss */
+#confirm .explain_wrapper {
+  max-width: 1024px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  margin-top: 60px;
+  border-bottom: 1px dashed #444;
+  margin-bottom: 30px;
+  color: #444;
+}
+/* line 506, contact.scss */
+#confirm .explain_wrapper h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  /* line 506, contact.scss */
+  #confirm .explain_wrapper h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+}
+/* line 515, contact.scss */
+#confirm .explain_wrapper p {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+@media (max-width: 575px) {
+  /* line 515, contact.scss */
+  #confirm .explain_wrapper p {
+    font-size: 1.2rem;
+  }
+}
+/* line 523, contact.scss */
+#confirm form {
+  max-width: 1010px;
+  margin-top: 0;
+  margin-bottom: 90px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 530, contact.scss */
+#confirm .form_item {
+  font-size: 1.5rem;
+}
+@media (max-width: 1024px) {
+  /* line 530, contact.scss */
+  #confirm .form_item {
+    margin-bottom: 20px;
+  }
+}
+/* line 535, contact.scss */
+#confirm .form_item h4 {
+  margin-top: 60px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+@media (max-width: 1024px) {
+  /* line 535, contact.scss */
+  #confirm .form_item h4 {
+    font-size: 1.8rem;
+  }
+}
+/* line 544, contact.scss */
+#confirm .form_item .caution {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+/* line 548, contact.scss */
+#confirm .item_input p {
+  width: 100%;
+  border-radius: 2px;
+  padding: 16px 20px;
+  margin: 11px 0 11px 0;
+  background-color: #fff;
+  font-size: 16px;
+  border: 2px solid #ccc;
+}
+/* line 557, contact.scss */
+#confirm .item_input_post {
+  font-size: 1.5rem;
+}
+/* line 560, contact.scss */
+#confirm .item_input_post label {
+  display: inline-block;
+  border-radius: 2px;
+  border: none;
+  padding: 8px 10px;
+  border: 2px solid #ccc;
+  margin: 11px 0 11px 0;
+  font-size: 1.4rem;
+  background-color: #fff;
+}
+/* line 570, contact.scss */
+#confirm .item_select {
+  position: relative;
+}
+/* line 572, contact.scss */
+#confirm .item_select label {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 15px 0;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  color: #777;
+  border-radius: 2px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 575px) {
+  /* line 572, contact.scss */
+  #confirm .item_select label {
+    padding: 13px 16px;
+    margin: 10px 0;
+  }
+}
+/* line 587, contact.scss */
+#confirm .item_select_mini {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+@media (max-width: 575px) {
+  /* line 587, contact.scss */
+  #confirm .item_select_mini {
+    margin-top: 10px;
+  }
+}
+/* line 597, contact.scss */
+#confirm .item_select_mini label {
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: #777;
+  font-size: 1.6rem;
+  border-radius: 2px;
+}
+@media (max-width: 575px) {
+  /* line 597, contact.scss */
+  #confirm .item_select_mini label {
+    padding: 8px 20px 8px 5px;
+  }
+}
+/* line 612, contact.scss */
+#confirm .item_select_mini:first-of-type {
+  margin-left: 0;
+}
+/* line 615, contact.scss */
+#confirm .item_checkbox {
+  padding: 20px 5px;
+}
+/* line 617, contact.scss */
+#confirm .item_checkbox label {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  margin-right: 20px;
+  color: #777;
+  font-size: 1.5rem;
+  -ms-user-select: none;
+  /* IE 10+ */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@media (max-width: 1024px) {
+  /* line 617, contact.scss */
+  #confirm .item_checkbox label {
+    display: block;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 635, contact.scss */
+  #confirm .item_checkbox label:last-child {
+    padding-bottom: 0;
+  }
+}
+/* line 640, contact.scss */
+#confirm .item_checkbox label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: #216D1B;
+}
+/* line 652, contact.scss */
+#confirm .item_checkbox label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #333;
+  border-right: 3px solid #333;
+}
+/* line 665, contact.scss */
+#confirm .item_circle_checkbox {
+  padding: 20px 5px;
+}
+/* line 667, contact.scss */
+#confirm .item_circle_checkbox label {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  position: relative;
+  margin-right: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  -ms-user-select: none;
+  /* IE 10+ */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@media (max-width: 1024px) {
+  /* line 667, contact.scss */
+  #confirm .item_circle_checkbox label {
+    display: block;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 685, contact.scss */
+  #confirm .item_circle_checkbox label:last-child {
+    padding-bottom: 0;
+  }
+}
+/* line 690, contact.scss */
+#confirm .item_circle_checkbox label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  border-radius: 16px;
+}
+@media (max-width: 575px) {
+  /* line 690, contact.scss */
+  #confirm .item_circle_checkbox label::before {
+    top: 1px;
+    width: 24px;
+    height: 24px;
+  }
+}
+/* line 706, contact.scss */
+#confirm .item_circle_checkbox label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 6px;
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+@media (max-width: 575px) {
+  /* line 706, contact.scss */
+  #confirm .item_circle_checkbox label::after {
+    top: 5.3px;
+    left: 4px;
+    width: 17px;
+    height: 17px;
+  }
+}
+/* line 724, contact.scss */
+#confirm .item_input textarea {
+  width: calc(100% - 40px);
+  border-radius: 2px;
+  border: none;
+  padding: 16px 20px;
+  margin: 11px 0 11px 0;
+  font-size: 16px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.23);
+}
+/* line 733, contact.scss */
+#confirm .confirm_buttons {
+  text-align: center;
+}
+/* line 735, contact.scss */
+#confirm .confirm_buttons h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+/* line 741, contact.scss */
+#confirm .confirm_buttons button {
+  display: inline-block;
+  min-width: 200px;
+  width: 35%;
+  height: 50px;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 2rem;
+  font-family: "marugame", sans-serif;
+  font-weight: bold;
+  transition: filter 0.2s linear;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  /* line 741, contact.scss */
+  #confirm .confirm_buttons button {
+    width: 200px;
+    height: 42px;
+    font-size: 1.5rem;
+  }
+}
+/* line 762, contact.scss */
+#confirm .confirm_buttons .back_button {
+  background: #fff;
+  border: solid 2px #333;
+  margin-right: 15px;
+  color: #333;
+}
+@media (max-width: 575px) {
+  /* line 762, contact.scss */
+  #confirm .confirm_buttons .back_button {
+    margin-right: 0;
+  }
+}
+/* line 771, contact.scss */
+#confirm .confirm_buttons .submit_button {
+  background: #333;
+}
+@media (max-width: 1024px) {
+  /* line 771, contact.scss */
+  #confirm .confirm_buttons .submit_button {
+    height: 50px;
+    margin: 6px 10px;
+  }
+}
+
+/* line 781, contact.scss */
+#result .contact_contents {
+  max-width: 1024px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (max-width: 575px) {
+  /* line 781, contact.scss */
+  #result .contact_contents {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 790, contact.scss */
+#result .explain_wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+/* line 794, contact.scss */
+#result .explain_wrapper h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3rem;
+}
+/* line 799, contact.scss */
+#result .explain_wrapper p {
+  line-height: 2;
+  padding: 0 20px;
+  font-size: 1.5rem;
+}
+/* line 804, contact.scss */
+#result .explain_wrapper .back_to_top_button {
+  display: block;
+  width: 35%;
+  min-width: 200px;
+  line-height: 50px;
+  margin-top: 55px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "marugame", sans-serif;
+  text-align: center;
+  transition: filter 0.2s linear;
+  text-decoration: none;
+  cursor: pointer;
+  background: #333;
+}

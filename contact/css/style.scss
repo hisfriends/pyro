@@ -1,0 +1,103 @@
+$pc: 1024px; // ラップトップの幅
+$tab: 760px; // タブレットの幅
+$sp: 575px;  // スマホの幅
+.top_catch {
+	padding: 400px 0;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	@media (max-width: ($tab)) {
+		padding: 300px 0;
+	}
+}
+#main_contents {
+	margin-top: 90px;
+  section {
+  	margin-bottom: 120px;
+  	.section_title {
+  		font-family: 'Courier Prime', Helvetica, "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  		position: relative;
+  	  text-align: center;
+  	  color: #240402;
+  	  letter-spacing: 4px;
+  		font-size: 2.6rem;
+  		font-weight: 400;
+			@media (max-width: ($sp)) {
+				font-size: 2rem;
+			}
+  		span {
+  			position: relative;
+  			display: block;
+  			margin-top: 40px;
+  			font-size: 1.4rem;
+				@media (max-width: ($sp)) {
+					font-size: 1.2rem;
+				}
+  		}
+  		span:before {
+  			content: "";
+  			display: block;
+  			position: absolute;
+  			top: -22px;
+  			right: 0;
+  			left: 0;
+  			width: 50px;
+  			height: 2px;
+  			margin-right: auto;
+  			margin-left: auto;
+  			background-color: #000;
+  		}
+  	}
+  	.description {
+  		max-width: 800px;
+			padding-right: 15px;
+			padding-left: 15px;
+  		margin-top: 60px;
+  		margin-right: auto;
+  		margin-left: auto;
+  		line-height: 2.5;
+  		font-size: 1.5rem;
+  		font-weight: 200;
+      text-align: justify;
+			@media (max-width: ($sp)) {
+				text-align: justify;
+			}
+			br {
+				@media (max-width: ($sp)) {
+					display: none;
+				}
+			}
+			h2 {
+				font-size: 2rem;
+				font-weight: 200;
+			}
+  	}
+		.description:last-child {
+			margin-bottom: 60px;
+		}
+  	.some_img {
+  		display: flex;
+  		flex-wrap: wrap;
+  		max-width: 800px;
+			padding-right: 15px;
+			padding-left: 15px;
+  		margin-top: 60px;
+  		margin-right: auto;
+  		margin-left: auto;
+  		.panel {
+  			display: inline-block;
+  			width: 50%;
+				@media (max-width: ($tab)) {
+					width: 100%;
+					margin-bottom: 30px;
+				}
+				h3 {
+					line-height: 2;
+					font-size: 1.5rem;
+					font-weight: 200;
+				}
+  		}
+  	}
+  }
+}

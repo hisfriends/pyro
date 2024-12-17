@@ -1,0 +1,827 @@
+$pc: 1024px; // ラップトップの幅
+$tab: 760px; // タブレットの幅
+$sp: 575px;  // スマホの幅
+$main_color: #333;
+
+.contact_contents {
+  max-width: $pc;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-bottom: 90px;
+  margin-left: auto;
+  @media(max-width: ($sp)) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+#form {
+  text-align: left;
+  .explain_wrapper {
+    max-width: $pc;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #444;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    color: #444;
+    h1 {
+      margin-bottom:  30px;
+      font-size: 2.5rem;
+      text-align: center;
+      @media(max-width: ($sp)) {
+        margin-bottom:  20px;
+        font-size: 2rem;
+      }
+    }
+    p {
+      line-height: 2;
+      font-size: 1.5rem;
+      @media(max-width: ($sp)) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  form {
+    max-width: 800px;
+    margin-top: 0;
+    margin-bottom: 90px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .form_item {
+    font-size: 1.5rem;
+    @media(max-width: ($sp)) {
+      margin: 0 0 20px;
+      font-size: 1.3rem;
+    }
+    h4,
+    h5 {
+      font-weight: 200;
+    }
+    h4 {
+      margin-top: 60px;
+      font-size: 2rem;
+      @media(max-width: ($sp)) {
+        font-size: 1.8rem;
+      }
+      span {
+        margin-left: 10px;
+        font-size: 1.5rem;
+        color: $main_color;
+        @media(max-width: ($sp)) {
+          font-size: 1.2rem;
+        }
+      }
+      span.at_will {
+        color: #aaa;
+      }
+    }
+    h5 {
+      margin-top: 15px;
+      color: $main_color;
+      font-size: 1.3rem;
+    }
+    .caution {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+  .item_input input {
+    width: calc(100% - 40px);
+    border-radius: 2px;
+    border: 2px solid #ddd;
+    padding: 16px 20px;
+    margin: 11px 0 11px 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.23);
+    @media(max-width: ($sp)) {
+      padding: 13px 16px;
+      margin: 5px 0;
+    }
+  }
+  .item_input_mini input {
+  	border-radius: 2px;
+  	border: none;
+  	padding: 8px 10px;
+  	border: 2px solid #ddd;
+  	margin: 11px 0 11px 0;
+  	font-size: 14px;
+  	box-shadow: 1px 1px 8px rgba(0,0,0,0.23);
+  }
+  select{
+    outline:none;
+    text-overflow: '';
+    background: none transparent;
+    vertical-align: middle;
+    font-size: inherit;
+    color: inherit;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  }
+  .item_select {
+    position:relative;
+    i {
+      z-index: 1;
+      position: absolute;
+      right: 15px;
+      top: 16px;
+      line-height: 52px;
+      color: #777;
+      font-size: 30px;
+      pointer-events: none;
+      @media(max-width: ($sp)) {
+        top: 12px;
+        line-height: 40px;
+        font-size: 26px;
+      }
+    }
+    select {
+      width: 100%;
+      padding: 16px 20px;
+      margin: 15px 0;
+      border: 2px solid #ddd;
+      background-color: #fff;
+      color: #777;
+      border-radius: 2px;
+      box-shadow: 1px 1px 8px rgba(0,0,0,0.23);
+      @media(max-width: ($sp)) {
+        padding: 13px 16px;
+        margin: 10px 0;
+      }
+      option {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        color: #333;
+      }
+    }
+  }
+  .item_select_mini {
+    position:relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 0;
+    @media(max-width: ($sp)) {
+      margin-top: 10px;
+    }
+    i {
+      z-index: 1;
+      position: absolute;
+      right: 15px;
+      top: 2px;
+      line-height: 50px;
+      color: #777;
+      font-size: 30px;
+      pointer-events: none;
+      @media(max-width: ($sp)) {
+        right: 7px;
+        line-height: 33px;
+        font-size: 16px;
+      }
+    }
+    select{
+      padding-top: 16px;
+      padding-right: 50px;
+      padding-bottom: 20px;
+      padding-left: 16px;
+      border: 2px solid #ddd;
+      background-color: #fff;
+      color: #777;
+      border-radius: 2px;
+      box-shadow: 1px 1px 8px rgba(0,0,0,0.23);
+      @media(max-width: ($sp)) {
+        padding: 8px 20px 8px 5px;
+      }
+      option{
+        display: block;
+        background-color: #fff;
+        color: #333;
+      }
+    }
+  }
+  .item_select_mini:first-of-type {
+    margin-left: 0;
+  }
+  .item_checkbox {
+    display:  flex;
+    flex-wrap: wrap;
+    padding: 20px 5px 0;
+    label {
+      display: inline-block;
+      width: 33.33%;
+      padding-bottom: 30px;
+      @media(max-width: ($pc)) {
+        width: 50%;
+      }
+      @media(max-width: ($sp)) {
+        width: 100%;
+        padding-bottom: 15px;
+
+      }
+    }
+    label:last-child {
+      @media(max-width: ($sp)) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .checkbox_input {
+    display: none;
+  }
+  .checkbox_input_text {
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    position:relative;
+    margin-right: 20px;
+    color: #777;
+    font-weight: 700;
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    @media(max-width: ($sp)) {
+      padding-left: 20px;
+    }
+    .unavailable {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      width: 100px;
+      line-height: 20px;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: rgba(234, 85, 73, 0.8);
+      transform: translateY(-50%) translateX(-5%) rotate(-15deg);
+      color: #fff;
+      font-size: 1.6rem;
+      text-align: center;
+      @media(max-width: ($pc)) {
+        right: auto;
+        left: 25px
+      }
+      @media(max-width: ($sp)) {
+
+        transform: translateY(-50%) translateX(-5%) rotate(-15deg);
+      }
+    }
+  }
+  .checkbox_input_text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    @media(max-width: ($sp)) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .checkbox_input:checked + .checkbox_input_text::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    width: 7px;
+    height: 14px;
+    transform: rotate(40deg);
+    border-bottom: 3px solid $main_color;
+    border-right: 3px solid $main_color;
+    @media(max-width: ($sp)) {
+      top: -2px;
+      left: 4px;
+      width: 5px;
+      height: 12px;
+    }
+  }
+  .item_circle_checkbox {
+    display:  flex;
+    flex-wrap: wrap;
+    padding: 20px 5px 0;
+    label {
+      display: inline-block;
+      width: 50%;
+      padding-bottom: 30px;
+      @media(max-width: ($sp)) {
+        width: 100%;
+        padding-bottom: 15px;
+
+      }
+    }
+    label:last-child {
+      @media(max-width: ($sp)) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .circle_check {
+    display: none;
+  }
+  .circle_check_text {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    position:relative;
+    margin-right: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    @media(max-width: ($sp)) {
+      font-size: 1.8rem;
+      padding-left: 30px;
+    }
+    .unavailable {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      width: 100px;
+      line-height: 20px;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: rgba(234, 85, 73, 0.8);
+      transform: translateY(-50%) translateX(-5%) rotate(-15deg);
+      color: #fff;
+      text-align: center;
+      @media(max-width: ($pc)) {
+        right: auto;
+        left: 25px
+      }
+      @media(max-width: ($sp)) {
+
+        transform: translateY(-50%) translateX(-5%) rotate(-15deg);
+      }
+    }
+  }
+  .circle_check_text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 16px;
+    @media(max-width: ($sp)) {
+      top: 1px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .circle_check:checked + .circle_check_text::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    width: 20px;
+    height: 20px;
+    background-color: $main_color;
+    border-radius: 10px;
+    @media(max-width: ($sp)) {
+      top: 5.3px;
+      left: 4px;
+      width: 17px;
+      height: 17px;
+    }
+  }
+  .item_input textarea {
+    width: calc(100% - 40px);
+    border-radius: 2px;
+    border: 2px solid #ddd;
+    padding: 16px 20px;
+    margin: 11px 0 11px 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.23);
+  }
+  .item_input_post {
+    font-size: 1.5rem;
+  }
+  .item_input_post input {
+    border-radius: 2px;
+    border: 2px solid #ddd;
+    padding: 8px 10px;
+    margin: 11px 0 11px 0;
+    font-size: 1.4rem;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.23);
+  }
+  .privacy_item {
+    display: block;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border: solid 1px #888;
+    h4 {
+      line-height: 2;
+      font-size: 1.8rem;
+    }
+    p {
+      line-height: 2;
+      font-size: 1.5rem;
+      a {
+        color: #fe8c34;
+      }
+    }
+    div {
+      padding-bottom: 20px;
+      text-align: center;
+      @media(max-width: ($sp)) {
+        padding-top: 10px;
+      }
+      label {
+        position: absolute;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 135px;
+        right: 0;
+        left: 0;
+        .checkbox_input_text {
+          font-size: 1.5rem;
+          @media(max-width: ($sp)) {
+            font-size: 1.3rem;
+          }
+        }
+        span:before {
+          top: 0;
+        }
+        span:after {
+          top: -3px;
+        }
+      }
+    }
+  }
+  .submit_button {
+    display: block;
+    min-width: 200px;
+    width: 40%;
+    height: 50px;
+    padding: 0;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    background: $main_color;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Noto Sans JP", 游ゴシック, YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+    transition: filter 0.2s linear;
+    cursor: pointer;
+    @media(max-width: ($sp)) {
+      width: 200px;
+      height: 42px;
+      font-size: 1.5rem;
+    }
+  }
+}
+#confirm {
+  .explain_wrapper {
+    max-width: $pc;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    margin-top: 60px;
+    border-bottom: 1px dashed #444;
+    margin-bottom: 30px;
+    color: #444;
+    h1 {
+      margin-bottom:  30px;
+      font-size: 2.5rem;
+      text-align: center;
+      @media(max-width: ($sp)) {
+        margin-bottom:  20px;
+        font-size: 2rem;
+      }
+    }
+    p {
+      line-height: 2;
+      font-size: 1.5rem;
+      @media(max-width: ($sp)) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  form {
+    max-width: 1010px;
+    margin-top: 0;
+    margin-bottom: 90px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .form_item {
+    font-size: 1.5rem;
+    @media(max-width: ($pc)) {
+      margin-bottom: 20px;
+    }
+    h4 {
+      margin-top: 60px;
+      font-size: 2rem;
+      font-weight: 200;
+      @media(max-width: ($pc)) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .form_item .caution {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .item_input p {
+    width: 100%;
+    border-radius: 2px;
+    padding: 16px 20px;
+    margin: 11px 0 11px 0;
+    background-color: #fff;
+    font-size: 16px;
+    border: 2px solid #ccc;
+  }
+  .item_input_post {
+    font-size: 1.5rem;
+  }
+  .item_input_post label {
+    display: inline-block;
+    border-radius: 2px;
+    border: none;
+    padding: 8px 10px;
+    border: 2px solid #ccc;
+    margin: 11px 0 11px 0;
+    font-size: 1.4rem;
+    background-color: #fff;
+  }
+  .item_select {
+    position:relative;
+    label {
+      width: 100%;
+      padding: 16px 20px;
+      margin: 15px 0;
+      border: 2px solid #ddd;
+      background-color: #fff;
+      color: #777;
+      border-radius: 2px;
+      box-shadow: 1px 1px 8px rgba(0,0,0,0.23);
+      @media(max-width: ($sp)) {
+        padding: 13px 16px;
+        margin: 10px 0;
+      }
+    }
+  }
+  .item_select_mini {
+    position:relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 0;
+    @media(max-width: ($sp)) {
+      margin-top: 10px;
+    }
+    label {
+      padding-top: 10px;
+      padding-right: 16px;
+      padding-bottom: 10px;
+      padding-left: 16px;
+      border: 2px solid #ccc;
+      background-color: #fff;
+      color: #777;
+      font-size: 1.6rem;
+      border-radius: 2px;
+      @media(max-width: ($sp)) {
+        padding: 8px 20px 8px 5px;
+      }
+    }
+  }
+  .item_select_mini:first-of-type {
+    margin-left: 0;
+  }
+  .item_checkbox {
+    padding: 20px 5px;
+    label {
+      display: inline-block;
+      padding-bottom: 10px;
+      padding-left: 25px;
+      position:relative;
+      margin-right: 20px;
+      color: #777;
+      font-size: 1.5rem;
+      -ms-user-select: none; /* IE 10+ */
+      -moz-user-select: -moz-none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      @media(max-width: ($pc)) {
+        display: block;
+        padding-bottom: 15px;
+      }
+    }
+    label:last-child {
+      @media(max-width: ($pc)) {
+        padding-bottom: 0;
+      }
+    }
+    label::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      color: #216D1B;
+    }
+    label::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -2px;
+      left: 5px;
+      width: 7px;
+      height: 14px;
+      transform: rotate(40deg);
+      border-bottom: 3px solid $main_color;
+      border-right: 3px solid $main_color;
+    }
+  }
+  .item_circle_checkbox {
+    padding: 20px 5px;
+    label {
+      display: inline-block;
+      padding-bottom: 10px;
+      padding-left: 40px;
+      position:relative;
+      margin-right: 20px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      -ms-user-select: none; /* IE 10+ */
+      -moz-user-select: -moz-none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      @media(max-width: ($pc)) {
+        display: block;
+        padding-bottom: 15px;
+      }
+    }
+    label:last-child {
+      @media(max-width: ($pc)) {
+        padding-bottom: 0;
+      }
+    }
+    label::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #999;
+      border-radius: 16px;
+      @media(max-width: ($sp)) {
+        top: 1px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    label::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 6px;
+      width: 20px;
+      height: 20px;
+      background-color: $main_color;
+      border-radius: 10px;
+      @media(max-width: ($sp)) {
+        top: 5.3px;
+        left: 4px;
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+  .item_input textarea {
+    width: calc(100% - 40px);
+    border-radius: 2px;
+    border: none;
+    padding: 16px 20px;
+    margin: 11px 0 11px 0;
+    font-size: 16px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.23);
+  }
+  .confirm_buttons {
+    text-align: center;
+    h4 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 15px;
+    }
+    button {
+      display: inline-block;
+      min-width: 200px;
+      width: 35%;
+      height: 50px;
+      border: none;
+      padding: 0;
+      border-radius: 6px;
+      box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      font-size: 2rem;
+      font-family: "marugame", sans-serif;
+      font-weight: bold;
+      transition: filter 0.2s linear;
+      cursor: pointer;
+      @media(max-width: ($sp)) {
+        width: 200px;
+        height: 42px;
+        font-size: 1.5rem;
+      }
+    }
+    .back_button {
+      background: #fff;
+      border: solid 2px $main_color;
+      margin-right: 15px;
+      color: $main_color;
+      @media(max-width: ($sp)) {
+        margin-right: 0;
+      }
+    }
+    .submit_button {
+      background: $main_color;
+      @media(max-width: ($pc)) {
+        height: 50px;
+        margin: 6px 10px;
+      }
+    }
+  }
+}
+#result {
+  .contact_contents {
+    max-width: $pc;
+    padding-right: 30px;
+    padding-left: 30px;
+    @media(max-width: ($sp)) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .explain_wrapper {
+    max-width: $pc;
+    margin: 0 auto;
+    padding: 64px 20px;
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 3rem;
+    }
+    p {
+      line-height: 2;
+      padding: 0 20px;
+      font-size: 1.5rem;
+    }
+    .back_to_top_button {
+      display: block;
+      width: 35%;
+      min-width: 200px;
+      line-height: 50px;
+      margin-top: 55px;
+      margin-right: auto;
+      margin-bottom: 25px;
+      margin-left: auto;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: "marugame", sans-serif;
+      text-align: center;
+      transition: filter 0.2s linear;
+      text-decoration: none;
+      cursor: pointer;
+      background: $main_color;
+    }
+  }
+}
